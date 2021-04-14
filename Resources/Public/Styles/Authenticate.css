@@ -1,0 +1,1305 @@
+@charset "UTF-8";
+
+form {
+  margin: 0 0 20px;
+}
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+legend {
+  display: block;
+  width: 100%;
+  padding: 8px 0 0;
+  margin-bottom: 16px;
+  font-size: 150%;
+  line-height: 40px;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+legend small {
+  font-size: 15px;
+  color: #3f3f3f;
+}
+label,
+input,
+button,
+select,
+textarea {
+  font-size: 100%;
+  font-weight: normal;
+  line-height: 20px;
+}
+input,
+button,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.neos-uneditable-input {
+  display: inline-block;
+  height: 20px;
+  padding: 4px 6px;
+  margin-bottom: 10px;
+  font-size: 100%;
+  line-height: 20px;
+  color: #555;
+  vertical-align: middle;
+}
+input,
+textarea,
+.neos-uneditable-input {
+  width: 206px;
+}
+textarea {
+  height: auto;
+}
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.neos-uneditable-input {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.neos-uneditable-input:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(82, 168, 236, 0.6);
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  *margin-top: 0;
+  /* IE7 */
+  margin-top: 1px \9;
+  /* IE8-9 */
+  line-height: normal;
+}
+input[type="file"],
+input[type="image"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+select,
+input[type="file"] {
+  height: 30px;
+  /* In IE7, the height of the select element cannot be changed by height, only font-size */
+  *margin-top: 4px;
+  /* For IE7, add top margin to align select with labels */
+  line-height: 30px;
+}
+select {
+  width: 220px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+select[multiple],
+select[size] {
+  height: auto;
+}
+select:focus,
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.neos-uneditable-input,
+.neos-uneditable-textarea {
+  color: #3f3f3f;
+  background-color: #fcfcfc;
+  border-color: #ccc;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
+  cursor: not-allowed;
+}
+.neos-uneditable-input {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.neos-uneditable-textarea {
+  width: auto;
+  height: auto;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #999;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #999;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #999;
+}
+.neos-radio,
+.neos-checkbox {
+  min-height: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+.neos-radio input[type="radio"],
+.neos-checkbox input[type="checkbox"] {
+  float: left;
+  margin-left: -20px;
+}
+.neos-controls > .neos-radio:first-child,
+.neos-controls > .neos-checkbox:first-child {
+  padding-top: 5px;
+}
+.neos-radio.neos-inline,
+.neos-checkbox.neos-inline {
+  display: inline-block;
+  padding-top: 5px;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+.neos-radio.neos-inline + .neos-radio.neos-inline,
+.neos-checkbox.neos-inline + .neos-checkbox.neos-inline {
+  margin-left: 10px;
+}
+.neos-input-mini {
+  width: 60px;
+}
+.neos-input-small {
+  width: 90px;
+}
+.neos-input-medium {
+  width: 150px;
+}
+.neos-input-large {
+  width: 210px;
+}
+.neos-input-xlarge {
+  width: 270px;
+}
+.neos-input-xxlarge {
+  width: 530px;
+}
+input[class*="neos-span"],
+select[class*="neos-span"],
+textarea[class*="neos-span"],
+.neos-uneditable-input[class*="neos-span"],
+.neos-row-fluid input[class*="neos-span"],
+.neos-row-fluid select[class*="neos-span"],
+.neos-row-fluid textarea[class*="neos-span"],
+.neos-row-fluid .neos-uneditable-input[class*="neos-span"] {
+  float: none;
+  margin-left: 0;
+}
+.neos-input-append input[class*="neos-span"],
+.neos-input-append .neos-uneditable-input[class*="neos-span"],
+.neos-input-prepend input[class*="neos-span"],
+.neos-input-prepend .neos-uneditable-input[class*="neos-span"],
+.neos-row-fluid input[class*="neos-span"],
+.neos-row-fluid select[class*="neos-span"],
+.neos-row-fluid textarea[class*="neos-span"],
+.neos-row-fluid .neos-uneditable-input[class*="neos-span"],
+.neos-row-fluid .neos-input-prepend [class*="neos-span"],
+.neos-row-fluid .neos-input-append [class*="neos-span"] {
+  display: inline-block;
+}
+input,
+textarea,
+.neos-uneditable-input {
+  margin-left: 0;
+}
+.neos-controls-row [class*="neos-span"] + [class*="neos-span"] {
+  margin-left: 20px;
+}
+input.neos-span1,
+textarea.neos-span1 {
+  width: 46px;
+}
+input.neos-span2,
+textarea.neos-span2 {
+  width: 126px;
+}
+input.neos-span3,
+textarea.neos-span3 {
+  width: 206px;
+}
+input.neos-span4,
+textarea.neos-span4 {
+  width: 286px;
+}
+input.neos-span5,
+textarea.neos-span5 {
+  width: 366px;
+}
+input.neos-span6,
+textarea.neos-span6 {
+  width: 446px;
+}
+input.neos-span7,
+textarea.neos-span7 {
+  width: 526px;
+}
+input.neos-span8,
+textarea.neos-span8 {
+  width: 606px;
+}
+input.neos-span9,
+textarea.neos-span9 {
+  width: 686px;
+}
+input.neos-span10,
+textarea.neos-span10 {
+  width: 766px;
+}
+input.neos-span11,
+textarea.neos-span11 {
+  width: 846px;
+}
+input.neos-span12,
+textarea.neos-span12 {
+  width: 926px;
+}
+.neos-controls-row {
+  *zoom: 1;
+}
+.neos-controls-row:before,
+.neos-controls-row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.neos-controls-row:after {
+  clear: both;
+}
+.neos-controls-row [class*="neos-span"],
+.neos-row-fluid .neos-controls-row [class*="neos-span"] {
+  float: left;
+}
+.neos-controls-row .neos-checkbox[class*="neos-span"],
+.neos-controls-row .neos-radio[class*="neos-span"] {
+  padding-top: 5px;
+}
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly],
+.neos-uneditable-input {
+  opacity: 0.65;
+  cursor: not-allowed;
+  background-color: #eee;
+}
+input[type="radio"][disabled],
+input[type="checkbox"][disabled],
+input[type="radio"][readonly],
+input[type="checkbox"][readonly] {
+  background-color: transparent;
+}
+.neos-control-group.neos-warning .neos-control-label,
+.neos-control-group.neos-warning .neos-help-block,
+.neos-control-group.neos-warning .neos-help-inline {
+  color: #ff8700;
+}
+.neos-control-group.neos-warning .neos-checkbox,
+.neos-control-group.neos-warning .neos-radio,
+.neos-control-group.neos-warning input,
+.neos-control-group.neos-warning select,
+.neos-control-group.neos-warning textarea {
+  color: #ff8700;
+}
+.neos-control-group.neos-warning input,
+.neos-control-group.neos-warning select,
+.neos-control-group.neos-warning textarea {
+  border-color: #ff8700;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.neos-control-group.neos-warning input:focus,
+.neos-control-group.neos-warning select:focus,
+.neos-control-group.neos-warning textarea:focus {
+  border-color: #cc6c00;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffb766;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffb766;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffb766;
+}
+.neos-control-group.neos-warning .neos-input-prepend .neos-add-on,
+.neos-control-group.neos-warning .neos-input-append .neos-add-on {
+  color: #ff8700;
+  background-color: #fcf8e3;
+  border-color: #ff8700;
+}
+.neos-control-group.neos-error .neos-control-label,
+.neos-control-group.neos-error .neos-help-block,
+.neos-control-group.neos-error .neos-help-inline {
+  color: #ff460d;
+}
+.neos-control-group.neos-error .neos-checkbox,
+.neos-control-group.neos-error .neos-radio,
+.neos-control-group.neos-error input,
+.neos-control-group.neos-error select,
+.neos-control-group.neos-error textarea {
+  color: #ff460d;
+}
+.neos-control-group.neos-error input,
+.neos-control-group.neos-error select,
+.neos-control-group.neos-error textarea {
+  border-color: #ff460d;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.neos-control-group.neos-error input:focus,
+.neos-control-group.neos-error select:focus,
+.neos-control-group.neos-error textarea:focus {
+  border-color: #d93300;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ff9473;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ff9473;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ff9473;
+}
+.neos-control-group.neos-error .neos-input-prepend .neos-add-on,
+.neos-control-group.neos-error .neos-input-append .neos-add-on {
+  color: #ff460d;
+  background-color: #f2dede;
+  border-color: #ff460d;
+}
+.neos-control-group.neos-success .neos-control-label,
+.neos-control-group.neos-success .neos-help-block,
+.neos-control-group.neos-success .neos-help-inline {
+  color: #00a338;
+}
+.neos-control-group.neos-success .neos-checkbox,
+.neos-control-group.neos-success .neos-radio,
+.neos-control-group.neos-success input,
+.neos-control-group.neos-success select,
+.neos-control-group.neos-success textarea {
+  color: #00a338;
+}
+.neos-control-group.neos-success input,
+.neos-control-group.neos-success select,
+.neos-control-group.neos-success textarea {
+  border-color: #00a338;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.neos-control-group.neos-success input:focus,
+.neos-control-group.neos-success select:focus,
+.neos-control-group.neos-success textarea:focus {
+  border-color: #007026;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #0aff5e;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #0aff5e;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #0aff5e;
+}
+.neos-control-group.neos-success .neos-input-prepend .neos-add-on,
+.neos-control-group.neos-success .neos-input-append .neos-add-on {
+  color: #00a338;
+  background-color: #dff0d8;
+  border-color: #00a338;
+}
+.neos-control-group.neos-info .neos-control-label,
+.neos-control-group.neos-info .neos-help-block,
+.neos-control-group.neos-info .neos-help-inline {
+  color: #00b5ff;
+}
+.neos-control-group.neos-info .neos-checkbox,
+.neos-control-group.neos-info .neos-radio,
+.neos-control-group.neos-info input,
+.neos-control-group.neos-info select,
+.neos-control-group.neos-info textarea {
+  color: #00b5ff;
+}
+.neos-control-group.neos-info input,
+.neos-control-group.neos-info select,
+.neos-control-group.neos-info textarea {
+  border-color: #00b5ff;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.neos-control-group.neos-info input:focus,
+.neos-control-group.neos-info select:focus,
+.neos-control-group.neos-info textarea:focus {
+  border-color: #0091cc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #66d3ff;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #66d3ff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #66d3ff;
+}
+.neos-control-group.neos-info .neos-input-prepend .neos-add-on,
+.neos-control-group.neos-info .neos-input-append .neos-add-on {
+  color: #00b5ff;
+  background-color: #d9edf7;
+  border-color: #00b5ff;
+}
+input:focus:invalid,
+textarea:focus:invalid,
+select:focus:invalid {
+  color: #b94a48;
+  border-color: #ee5f5b;
+}
+input:focus:invalid:focus,
+textarea:focus:invalid:focus,
+select:focus:invalid:focus {
+  border-color: #e9322d;
+  -webkit-box-shadow: 0 0 6px #f8b9b7;
+  -moz-box-shadow: 0 0 6px #f8b9b7;
+  box-shadow: 0 0 6px #f8b9b7;
+}
+.neos-form-actions {
+  padding: 19px 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #e5e5e5;
+  *zoom: 1;
+}
+.neos-form-actions:before,
+.neos-form-actions:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.neos-form-actions:after {
+  clear: both;
+}
+.neos-help-block,
+.neos-help-inline {
+  color: #595959;
+}
+.neos-help-block {
+  display: block;
+  margin-bottom: 10px;
+}
+.neos-help-inline {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+  *zoom: 1;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+.neos-input-append,
+.neos-input-prepend {
+  display: inline-block;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  font-size: 0;
+  white-space: nowrap;
+}
+.neos-input-append input,
+.neos-input-append select,
+.neos-input-append .neos-uneditable-input,
+.neos-input-append .neos-dropdown-menu,
+.neos-input-append .neos-popover,
+.neos-input-prepend input,
+.neos-input-prepend select,
+.neos-input-prepend .neos-uneditable-input,
+.neos-input-prepend .neos-dropdown-menu,
+.neos-input-prepend .neos-popover {
+  font-size: 100%;
+}
+.neos-input-append input,
+.neos-input-append select,
+.neos-input-append .neos-uneditable-input,
+.neos-input-prepend input,
+.neos-input-prepend select,
+.neos-input-prepend .neos-uneditable-input {
+  position: relative;
+  margin-bottom: 0;
+  *margin-left: 0;
+  vertical-align: top;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+.neos-input-append input:focus,
+.neos-input-append select:focus,
+.neos-input-append .neos-uneditable-input:focus,
+.neos-input-prepend input:focus,
+.neos-input-prepend select:focus,
+.neos-input-prepend .neos-uneditable-input:focus {
+  z-index: 2;
+}
+.neos-input-append .neos-add-on,
+.neos-input-prepend .neos-add-on {
+  display: inline-block;
+  width: auto;
+  height: 20px;
+  min-width: 16px;
+  padding: 4px 5px;
+  font-size: 100%;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+.neos-input-append .neos-add-on,
+.neos-input-append .neos-button,
+.neos-input-append .neos-button-group > .neos-dropdown-toggle,
+.neos-input-prepend .neos-add-on,
+.neos-input-prepend .neos-button,
+.neos-input-prepend .neos-button-group > .neos-dropdown-toggle {
+  vertical-align: top;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.neos-input-append .neos-active,
+.neos-input-prepend .neos-active {
+  background-color: #3dff80;
+  border-color: #00a338;
+}
+.neos-input-prepend .neos-add-on,
+.neos-input-prepend .neos-button {
+  margin-right: -1px;
+}
+.neos-input-prepend .neos-add-on:first-child,
+.neos-input-prepend .neos-button:first-child {
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+.neos-input-append input,
+.neos-input-append select,
+.neos-input-append .neos-uneditable-input {
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+.neos-input-append input + .neos-button-group .neos-button:last-child,
+.neos-input-append select + .neos-button-group .neos-button:last-child,
+.neos-input-append
+  .neos-uneditable-input
+  + .neos-button-group
+  .neos-button:last-child {
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+.neos-input-append .neos-add-on,
+.neos-input-append .neos-button,
+.neos-input-append .neos-button-group {
+  margin-left: -1px;
+}
+.neos-input-append .neos-add-on:last-child,
+.neos-input-append .neos-button:last-child,
+.neos-input-append .neos-button-group:last-child > .neos-dropdown-toggle {
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+.neos-input-prepend.neos-input-append input,
+.neos-input-prepend.neos-input-append select,
+.neos-input-prepend.neos-input-append .neos-uneditable-input {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.neos-input-prepend.neos-input-append input + .neos-button-group .neos-button,
+.neos-input-prepend.neos-input-append select + .neos-button-group .neos-button,
+.neos-input-prepend.neos-input-append
+  .neos-uneditable-input
+  + .neos-button-group
+  .neos-button {
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+.neos-input-prepend.neos-input-append .neos-add-on:first-child,
+.neos-input-prepend.neos-input-append .neos-button:first-child {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+.neos-input-prepend.neos-input-append .neos-add-on:last-child,
+.neos-input-prepend.neos-input-append .neos-button:last-child {
+  margin-left: -1px;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+.neos-input-prepend.neos-input-append .neos-button-group:first-child {
+  margin-left: 0;
+}
+input.neos-search-query {
+  padding-right: 14px;
+  padding-right: 4px \9;
+  padding-left: 14px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.neos-form-search .neos-input-append .neos-search-query,
+.neos-form-search .neos-input-prepend .neos-search-query {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.neos-form-search .neos-input-append .neos-search-query {
+  -webkit-border-radius: 14px 0 0 14px;
+  -moz-border-radius: 14px 0 0 14px;
+  border-radius: 14px 0 0 14px;
+}
+.neos-form-search .neos-input-append .neos-button {
+  -webkit-border-radius: 0 14px 14px 0;
+  -moz-border-radius: 0 14px 14px 0;
+  border-radius: 0 14px 14px 0;
+}
+.neos-form-search .neos-input-prepend .neos-search-query {
+  -webkit-border-radius: 0 14px 14px 0;
+  -moz-border-radius: 0 14px 14px 0;
+  border-radius: 0 14px 14px 0;
+}
+.neos-form-search .neos-input-prepend .neos-button {
+  -webkit-border-radius: 14px 0 0 14px;
+  -moz-border-radius: 14px 0 0 14px;
+  border-radius: 14px 0 0 14px;
+}
+.neos-form-search input,
+.neos-form-search textarea,
+.neos-form-search select,
+.neos-form-search .neos-help-inline,
+.neos-form-search .neos-uneditable-input,
+.neos-form-search .neos-input-prepend,
+.neos-form-search .neos-input-append,
+.neos-form-inline input,
+.neos-form-inline textarea,
+.neos-form-inline select,
+.neos-form-inline .neos-help-inline,
+.neos-form-inline .neos-uneditable-input,
+.neos-form-inline .neos-input-prepend,
+.neos-form-inline .neos-input-append,
+.neos-form-horizontal input,
+.neos-form-horizontal textarea,
+.neos-form-horizontal select,
+.neos-form-horizontal .neos-help-inline,
+.neos-form-horizontal .neos-uneditable-input,
+.neos-form-horizontal .neos-input-prepend,
+.neos-form-horizontal .neos-input-append {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+  *zoom: 1;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+.neos-form-search .neos-hide,
+.neos-form-inline .neos-hide,
+.neos-form-horizontal .neos-hide {
+  display: none;
+}
+.neos-form-search label,
+.neos-form-inline label,
+.neos-form-search .neos-button-group,
+.neos-form-inline .neos-button-group {
+  display: inline-block;
+}
+.neos-form-search .neos-input-append,
+.neos-form-inline .neos-input-append,
+.neos-form-search .neos-input-prepend,
+.neos-form-inline .neos-input-prepend {
+  margin-bottom: 0;
+}
+.neos-form-search .neos-radio,
+.neos-form-search .neos-checkbox,
+.neos-form-inline .neos-radio,
+.neos-form-inline .neos-checkbox {
+  padding-left: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+.neos-form-search .neos-radio input[type="radio"],
+.neos-form-search .neos-checkbox input[type="checkbox"],
+.neos-form-inline .neos-radio input[type="radio"],
+.neos-form-inline .neos-checkbox input[type="checkbox"] {
+  float: left;
+  margin-right: 3px;
+  margin-left: 0;
+}
+.neos-control-group {
+  margin-bottom: 10px;
+}
+legend + .neos-control-group {
+  margin-top: 20px;
+  -webkit-margin-top-collapse: separate;
+}
+fieldset > .neos-control-group:first-child {
+  margin-top: 20px;
+}
+.neos-form-horizontal .neos-control-group {
+  margin-bottom: 20px;
+  *zoom: 1;
+}
+.neos-form-horizontal .neos-control-group:before,
+.neos-form-horizontal .neos-control-group:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.neos-form-horizontal .neos-control-group:after {
+  clear: both;
+}
+.neos-form-horizontal .neos-control-label {
+  float: left;
+  width: 160px;
+  padding-top: 5px;
+  text-align: right;
+}
+.neos-form-horizontal .neos-controls {
+  *display: inline-block;
+  *padding-left: 20px;
+  margin-left: 180px;
+  *margin-left: 0;
+}
+.neos-form-horizontal .neos-controls:first-child {
+  *padding-left: 180px;
+}
+.neos-form-horizontal .neos-help-block {
+  margin-bottom: 0;
+}
+.neos-form-horizontal input + .neos-help-block,
+.neos-form-horizontal select + .neos-help-block,
+.neos-form-horizontal textarea + .neos-help-block,
+.neos-form-horizontal .neos-uneditable-input + .neos-help-block,
+.neos-form-horizontal .neos-input-prepend + .neos-help-block,
+.neos-form-horizontal .neos-input-append + .neos-help-block {
+  margin-top: 10px;
+}
+.neos-form-horizontal .neos-form-actions {
+  padding-left: 180px;
+}
+.neos-tooltip {
+  position: absolute;
+  z-index: 999999;
+  display: block;
+  visibility: visible;
+  font-size: 11px;
+  line-height: 1.4;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+.neos-tooltip.neos-in {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+}
+.neos-tooltip.neos-top {
+  margin-top: -3px;
+  padding: 5px 0;
+}
+.neos-tooltip.neos-right {
+  margin-left: 3px;
+  padding: 0 5px;
+}
+.neos-tooltip.neos-bottom {
+  margin-top: 3px;
+  padding: 5px 0;
+}
+.neos-tooltip.neos-left {
+  margin-left: -3px;
+  padding: 0 5px;
+}
+.neos-tooltip-inner {
+  max-width: 200px;
+  padding: 8px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000;
+  white-space: normal;
+  text-shadow: none;
+  word-wrap: break-word;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.neos-tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.neos-tooltip.neos-top .neos-tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000;
+}
+.neos-tooltip.neos-right .neos-tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #000;
+}
+.neos-tooltip.neos-left .neos-tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #000;
+}
+.neos-tooltip.neos-bottom .neos-tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
+}
+@-moz-keyframes dot {
+  0% {
+    text-indent: -20px;
+  }
+  25% {
+    text-indent: -15px;
+  }
+  50% {
+    text-indent: -7px;
+  }
+  75% {
+    text-indent: 0px;
+  }
+  100% {
+    text-indent: -20px;
+  }
+}
+@-webkit-keyframes dot {
+  0% {
+    text-indent: -20px;
+  }
+  25% {
+    text-indent: -15px;
+  }
+  50% {
+    text-indent: -7px;
+  }
+  75% {
+    text-indent: 0px;
+  }
+  100% {
+    text-indent: -20px;
+  }
+}
+@keyframes dot {
+  0% {
+    text-indent: -20px;
+  }
+  25% {
+    text-indent: -15px;
+  }
+  50% {
+    text-indent: -7px;
+  }
+  75% {
+    text-indent: 0px;
+  }
+  100% {
+    text-indent: -20px;
+  }
+}
+.neos-ellipsis::after {
+  display: inline-block;
+  width: 12px;
+  content: "...";
+  overflow: hidden;
+  vertical-align: top;
+  -moz-animation: dot 1.3s infinite;
+  -webkit-animation: dot 1.3s infinite;
+  animation: dot 1.3s infinite;
+  -moz-animation-timing-function: step-start;
+  -webkit-animation-timing-function: step-start;
+  animation-timing-function: step-start;
+}
+.neos-login-box {
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.neos-login-box:before,
+.neos-login-box:after {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.neos-login-box:before {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-filter: blur(10px);
+  /* Chrome, Opera, etc. */
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='10');
+  filter: url("../Images/blur.svg#blur");
+  /* Older FF and others - http://jordanhollinger.com/media/blur.svg */
+  filter: blur(10px);
+  /* Firefox 35+, eventually all */
+  padding: 40px;
+}
+.neos-login-box:after {
+  background: rgba(255, 255, 255, 0.25);
+}
+.neos-login-box-logo {
+  margin: 0 0 20px 0;
+}
+.neos-login-box-logo-resource {
+  margin: 0 auto 0 auto;
+  display: block;
+}
+input[type="text"],
+input[type="password"] {
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #252525;
+}
+input[type="text"]:focus,
+input[type="text"]:invalid:focus,
+input[type="password"]:focus,
+input[type="password"]:invalid:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+input[type="text"]:-webkit-autofill,
+input[type="password"]:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px #fff inset;
+  -webkit-text-fill-color: #252525;
+}
+input[type="text"]:-webkit-autofill:focus,
+input[type="password"]:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px #fff inset;
+  -webkit-text-fill-color: #252525;
+}
+.neos-login-footer p,
+.neos-login-footer a {
+  color: rgba(255, 255, 255, 0.75);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.75);
+}
+form {
+  margin-bottom: 0;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  min-width: 288px;
+  height: 40px;
+  border: none;
+  background-color: #323232;
+  color: #fff;
+  font-size: 14px;
+  padding: 0 14px;
+  margin: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  font-family: "Noto Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+input[type="text"]:focus,
+input[type="text"]:invalid:focus,
+input[type="password"]:focus,
+input[type="password"]:invalid:focus {
+  background-color: #fff;
+  color: #252525;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+input[type="text"]:-webkit-autofill,
+input[type="password"]:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px #323232 inset;
+  -webkit-text-fill-color: #fff;
+}
+input[type="text"]:-webkit-autofill:focus,
+input[type="password"]:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px #fff inset;
+  -webkit-text-fill-color: #252525;
+}
+.neos-modal-centered {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.neos-login-main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex: 1 0 auto;
+  width: 100%;
+}
+.neos-login-box {
+  background: transparent;
+  border: none;
+  width: 320px;
+  z-index: 10;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  border-radius: none;
+}
+.neos-login-box svg {
+  margin: 0 auto;
+  display: block;
+}
+.neos-login-box header {
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.neos-login-box .neos-login-body {
+  padding: 0;
+  overflow: visible;
+}
+.neos-login-box .neos-actions {
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+.neos-login-box .neos-actions button {
+  height: 40px;
+  color: #fff;
+  border: none;
+  background-image: none;
+  font-size: 14px;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.neos-login-box .neos-actions button:focus {
+  outline: none;
+}
+.neos-login-box .neos-actions button.neos-login-btn {
+  background-color: #00b5ff;
+  width: 100%;
+}
+.neos-login-box .neos-actions button.neos-hidden {
+  display: none;
+}
+.neos-login-box .neos-actions button.neos-disabled {
+  cursor: not-allowed;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+  opacity: 0.65;
+}
+.neos-login-box .neos-controls {
+  height: 40px;
+  margin-bottom: 15px;
+}
+.neos-login-box .neos-tooltip {
+  left: -4px;
+  top: 0;
+  width: 100%;
+  position: relative;
+  clear: both;
+  float: none;
+}
+.neos-login-box .neos-tooltip.neos-bottom {
+  padding: 8px 0 0 0;
+  margin-left: 4px;
+  margin-top: -1px;
+}
+.neos-login-box .neos-tooltip.neos-in {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+.neos-login-box .neos-tooltip .neos-tooltip-arrow {
+  margin-left: -8px;
+  border-width: 0 8px 8px 8px;
+}
+.neos-login-box .neos-tooltip .neos-tooltip-inner {
+  max-width: 320px;
+  font-size: 13px;
+  color: #fff;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.neos-login-box .neos-tooltip-error .neos-tooltip-arrow {
+  border-bottom-color: #ff460d;
+}
+.neos-login-box .neos-tooltip-error .neos-tooltip-inner {
+  background-color: #ff460d;
+}
+.neos-login-box .neos-tooltip-notice .neos-tooltip-arrow {
+  border-bottom-color: #00a338;
+}
+.neos-login-box .neos-tooltip-notice .neos-tooltip-inner {
+  background-color: #00a338;
+}
+.neos-login-footer {
+  width: 50%;
+  padding: 20px;
+  font-family: "Noto Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.neos-login-footer p {
+  font-size: 12px;
+  color: #535353;
+  line-height: 1.3em;
+  margin: 0;
+}
+.neos-login-footer a {
+  color: #535353;
+}
+.neos-login-footer a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 1400px) {
+  .neos-login-footer {
+    width: 70%;
+  }
+}
+@media (max-width: 1000px) {
+  .neos-login-footer {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .neos-login-box {
+    width: 100%;
+    padding: 20px;
+  }
+  .neos-login-footer {
+    width: 100%;
+  }
+  input[type="text"],
+  input[type="password"] {
+    min-width: 0;
+  }
+}
+.startpage {
+  opacity: 0.1;
+}

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Login</title>
+        <link
+            rel="stylesheet"
+            href="/_Resources/Static/Packages/Neos.Neos/Styles/Login.css"
+        />
+        <link
+            rel="stylesheet"
+            href="/_Resources/Static/Packages/DIU.MicrosoftLogin/Styles/Styles.css"
+        />
+
+        <style type="text/css">
+            {wallpaperHead}
+        </style>
+
+        <script src="/_Resources/Static/Packages/Neos.Neos/Library/jquery/jquery-2.0.3.js"></script>
+        <script src="/_Resources/Static/Packages/Neos.Neos/Library/jquery-ui/js/jquery-ui-1.10.4.custom.js"></script>
+    </head>
+    <body class="neos" style="{wallpaperBody}">
+        <div class="neos-modal-centered">
+            <main class="neos-login-main">
+                <div class="neos-login-box background-image-active">
+                    <figure class="neos-login-box-logo">
+                        <img
+                            class="neos-login-box-logo-resource"
+                            src="/_Resources/Static/Packages/Neos.Neos/Images/Login/Logo.svg"
+                            width="200px"
+                            height="200px"
+                        />
+                    </figure>
+                    <f:render section="content" />
+                </div>
+            </main>
+            <footer class="neos-login-footer">
+                <p>
+                    <a href="http://neos.io" target="_blank">Neos</a> – ©
+                    2006-2018 This is free software, licensed under GPL3 or
+                    higher, and you are welcome to redistribute it under certain
+                    conditions; Neos comes with ABSOLUTELY NO WARRANTY; See
+                    <a href="http://neos.io" target="_blank">neos.io</a> for
+                    more details. Obstructing the appearance of this notice is
+                    prohibited by law.
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

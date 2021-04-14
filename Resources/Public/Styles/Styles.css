@@ -1,0 +1,20 @@
+.microsoft-login-btn img {
+  width: 20px;
+  height: auto;
+  padding-right: 5px;
+}
+.microsoft-login-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  width: calc(100% - 30px);
+}
+.form--hidden {
+  visibility: hidden;
+}
+.loginSpacer p {
+  color: #fff;
+  text-align: center;
+}

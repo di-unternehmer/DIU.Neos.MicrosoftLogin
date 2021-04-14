@@ -1,0 +1,8 @@
+- name: 'Login'
+  uriPattern: 'microsoftlogin(/{@action})'
+  defaults:
+    '@package': 'DIU.MicrosoftLogin'
+    '@controller': 'Login'
+    '@action': 'authenticate'
+    '@format': 'html'
+  appendExceedingArguments: true

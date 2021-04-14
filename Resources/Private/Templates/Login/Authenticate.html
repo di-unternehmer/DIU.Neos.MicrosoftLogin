@@ -1,0 +1,29 @@
+<f:layout name="Default" />
+
+<f:section name="content">
+    <header class="loginSpacer">
+        <p>Hallo {name}!</p>
+        <p><strong>Bitte warten</strong></p>
+        <p>Login erfolg jetzt ...</p>
+    </header>
+    <div class="neos-login-body neos loginSpacer">
+        <div class="form--hidden">
+            <form action="/neos/login" method="post">
+                <input
+                    type="text"
+                    name="__authentication[Neos][Flow][Security][Authentication][Token][UsernamePassword][username]"
+                    value="{username}"
+                />
+                <input
+                    type="password"
+                    name="__authentication[Neos][Flow][Security][Authentication][Token][UsernamePassword][password]"
+                    value="{password}"
+                />
+                <input type="submit" value="Login" />
+            </form>
+        </div>
+        <script>
+            document.forms[0].submit();
+        </script>
+    </div>
+</f:section>

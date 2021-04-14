@@ -1,0 +1,13 @@
+DIU:
+  MicrosoftLogin:
+    credentials:
+      clientId: ''
+      clientSecret: ''
+      redirectUri: 'https://www.yourproject.de/microsoftlogin/authenticate'
+    roles:
+      default:
+        - 'Neos.Neos:Editor'
+      admin:
+        - 'Neos.Neos:Administrator'
+#    admins:
+#      - 'Firstname.Lastname'
