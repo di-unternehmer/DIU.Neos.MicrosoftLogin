@@ -1,5 +1,5 @@
 {
-    "description": "DIU oAuth Login for Microsoft",
+    "description": "DIU OAuth Login for Microsoft",
     "type": "neos-package",
     "name": "diu/neos-microsoft-login",
     "require": {
