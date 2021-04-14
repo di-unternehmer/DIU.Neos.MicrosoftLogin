@@ -1,10 +1,10 @@
 privilegeTargets:
   'Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
-    'DIU.MicrosoftLogin:LoginController':
+    'DIU.Neos.MicrosoftLogin:LoginController':
       matcher: 'method(DIU\MicrosoftLogin\Controller\LoginController->(authenticate)Action())'
 
 roles:
   'Neos.Flow:Everybody':
     privileges:
-      - privilegeTarget: 'DIU.MicrosoftLogin:LoginController'
+      - privilegeTarget: 'DIU.Neos.MicrosoftLogin:LoginController'
         permission: GRANT

@@ -2,7 +2,7 @@
 namespace DIU\MicrosoftLogin\Controller;
 
 /*
- * This file is part of the DIU.MicrosoftLogin package.
+ * This file is part of the DIU.Neos.MicrosoftLogin package.
  *
  * (c) Contributors of the Neos Project - www.neos.io
  *
@@ -48,7 +48,7 @@ class LoginController extends ActionController
     protected $userService;
 
     /**
-     * @Flow\InjectConfiguration(package="DIU.MicrosoftLogin")
+     * @Flow\InjectConfiguration(package="DIU.Neos.MicrosoftLogin")
      * @var array
      */
     protected $settingsConfiguration;

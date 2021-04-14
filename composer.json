@@ -1,19 +1,19 @@
 {
     "description": "DIU oAuth Login for Microsoft",
     "type": "neos-package",
-    "name": "diu/microsoft-login",
+    "name": "diu/neos-microsoft-login",
     "require": {
         "neos/neos": "^5.0",
         "thenetworg/oauth2-azure": "^2.0"
     },
     "autoload": {
         "psr-4": {
-            "DIU\\MicrosoftLogin\\": "Classes/"
+            "DIU\\Neos\\MicrosoftLogin\\": "Classes/"
         }
     },
     "extra": {
         "neos": {
-            "package-key": "DIU.MicrosoftLogin"
+            "package-key": "DIU.Neos.MicrosoftLogin"
         },
         "applied-flow-migrations": [
             "TYPO3.FLOW3-201201261636",

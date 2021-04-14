@@ -2,15 +2,15 @@ Neos:
   Neos:
     fusion:
       autoInclude:
-        DIU.MicrosoftLogin: true
+        DIU.Neos.MicrosoftLogin: true
     userInterface:
       defaultLanguage: de
       translation:
         autoInclude:
-          'DIU.MicrosoftLogin':
+          'DIU.Neos.MicrosoftLogin':
             - '**/*'
   Flow:
     mvc:
       routes:
-        'DIU.MicrosoftLogin':
+        'DIU.Neos.MicrosoftLogin':
           position: 'before Neos.Neos'

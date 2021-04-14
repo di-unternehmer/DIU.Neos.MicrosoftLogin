@@ -37,7 +37,7 @@ prototype(Neos.Neos:View.Login) < prototype(Neos.Fusion:Component) {
                 '}</style>
                 <link
                     rel="stylesheet"
-                    href="/_Resources/Static/Packages/DIU.MicrosoftLogin/Styles/Styles.css"
+                    href="/_Resources/Static/Packages/DIU.Neos.MicrosoftLogin/Styles/Styles.css"
                 />
             </head>
             <body class="neos" style={'background-image:url(' + props.backgroundImageSource + ')'} style.@if.set={props.backgroundImageSource}>
@@ -65,7 +65,7 @@ prototype(Neos.Neos:View.Login) < prototype(Neos.Fusion:Component) {
                                 <a href="/microsoftlogin/authenticate" class="microsoft-login-btn">
 
                                     <img @children="attributes.src" width="120" alt="Microsoft Login" title="Microsoft Login">
-                                        <Neos.Fusion:ResourceUri path="resource://DIU.MicrosoftLogin/Public/Images/microsoft.svg" />
+                                        <Neos.Fusion:ResourceUri path="resource://DIU.Neos.MicrosoftLogin/Public/Images/microsoft.svg" />
                                     </img>
                                     Microsoft Login
                                 </a>

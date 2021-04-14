@@ -1,4 +1,4 @@
 - requestFilter: 'isPackage("Neos.Neos") && isController("Login") && isAction("index") && isFormat("html")'
   options:
     fusionPathPatterns:
-      - 'resource://DIU.MicrosoftLogin/Private/Fusion/Backend'
+      - 'resource://DIU.Neos.MicrosoftLogin/Private/Fusion/Backend'
