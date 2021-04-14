@@ -2,6 +2,7 @@
     "description": "DIU OAuth Login for Microsoft",
     "type": "neos-package",
     "name": "diu/neos-microsoft-login",
+    "license": "MIT",
     "require": {
         "neos/neos": "^5.0",
         "thenetworg/oauth2-azure": "^2.0"
