@@ -1,4 +1,4 @@
-# Neos MicrosoftLogin WebLogin oAuth
+# Neos MicrosoftLogin WebLogin OAuth
 
 This package allows login to Neos backend by a Microsoft account with access to an Azure application.
 Classical Neos backend login extended with Microsoft login, so you can decide how you want to login at your /neos/ backend.
@@ -26,9 +26,9 @@ DIU:
       admin:
         - 'Neos.Neos:Administrator'
     admins:
-      - 'Firstname.Lastname'
-      - 'Firstname.Lastname'
-      - 'Firstname.Lastname'
+      - 'user1@my-domain.com'
+      - 'user2@my-domain.com'
+      - '...'
 ```
 
 ## Roles
@@ -41,7 +41,7 @@ This is the default user role to login to the Neos Backend.
 Administrator login for the Neos Backend. 
 
 You can set for default and admin the `Neos Roles` you like in the Settings.Microsoft.yaml
-If a user should be in the admin group, you have to specify them with the users `Firstname.Lastname` in the Settings.Microsoft.yaml
+If a user should be in the admin group, you have to specify them with the users `email address` in the Settings.Microsoft.yaml
 
 If every user should have the `Neos.Neos:Administrator` role, you add that role to the default role and every user will have the admin role.
 
