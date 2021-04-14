@@ -10,4 +10,4 @@ DIU:
       admin:
         - 'Neos.Neos:Administrator'
 #    admins:
-#      - 'Firstname.Lastname'
+#      - 'ad-azure-user@my-domain.com'
