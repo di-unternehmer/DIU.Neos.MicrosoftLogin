@@ -1,5 +1,5 @@
 <?php
-namespace DIU\MicrosoftLogin\Controller;
+namespace DIU\Neos\MicrosoftLogin\Controller;
 
 /*
  * This file is part of the DIU.Neos.MicrosoftLogin package.
