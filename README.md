@@ -15,20 +15,21 @@ For example: Configuration/Production/Settings.Microsoft.yaml
 
 ```
 DIU:
-  MicrosoftLogin:
-    credentials:
-      clientId: 'your client id'
-      clientSecret: 'your client secret'
-      redirectUri: 'https://your.domain/microsoftlogin/authenticate'
-    roles:
-      default:
-        - 'Neos.Neos:Editor'
-      admin:
-        - 'Neos.Neos:Administrator'
-    admins:
-      - 'user1@my-domain.com'
-      - 'user2@my-domain.com'
-      - '...'
+  Neos:
+    MicrosoftLogin:
+      credentials:
+        clientId: 'your client id'
+        clientSecret: 'your client secret'
+        redirectUri: 'https://your.domain/microsoftlogin/authenticate'
+      roles:
+        default:
+          - 'Neos.Neos:Editor'
+        admin:
+          - 'Neos.Neos:Administrator'
+      admins:
+        - 'user1@my-domain.com'
+        - 'user2@my-domain.com'
+        - '...'
 ```
 
 ## Roles
@@ -49,14 +50,15 @@ For example: Configuration/Production/Settings.Microsoft.yaml.
 
 ```
 DIU:
-  MicrosoftLogin:
-    credentials:
-      clientId: 'your client id'
-      clientSecret: 'your client secret'
-      redirectUri: 'https://your.domain/microsoftlogin/authenticate'
-    roles:
-      default:
-        - 'Neos.Neos:Administrator'
+  Neos:
+    MicrosoftLogin:
+      credentials:
+        clientId: 'your client id'
+        clientSecret: 'your client secret'
+        redirectUri: 'https://your.domain/microsoftlogin/authenticate'
+      roles:
+        default:
+          - 'Neos.Neos:Administrator'
 ```
 
 ## App registration
