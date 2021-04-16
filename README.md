@@ -6,7 +6,7 @@ Classical Neos backend login extended with Microsoft login, so you can decide ho
 ## Authors
 Christian Schwahn, Alexander Kappler
 
-The development and the public-releases of this package is sponsored by our employer https://www.di-unternehmer.com
+The development and the public-releases of this package is sponsored by our employer https://www.diu.digital/
 
 
 ## Screenshot
