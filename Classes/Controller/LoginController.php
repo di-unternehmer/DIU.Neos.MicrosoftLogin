@@ -190,7 +190,7 @@ class LoginController extends ActionController
         $roles = array();
         if ($username !== null) {
             $roles = $this->settingsConfiguration['roles']['default'];
-            if (in_array($username, $this->settingsConfiguration['admins'])) {
+            if (isset($this->settingsConfiguration['admins']) && in_array($username, $this->settingsConfiguration['admins'])) {
                 $roles = array_merge($roles, $this->settingsConfiguration['roles']['admin']);
             }
         }
