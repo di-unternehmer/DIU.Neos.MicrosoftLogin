@@ -16,6 +16,7 @@ The development and the public-releases of this package is sponsored by our empl
 ## Installation
 composer require diu/neos-microsoft-login
 
+## Configuration
 You just need to add a new Azure application and add clientId and clientSecret in your Neos project. Then you are able to control 
 logins by your Microsoft Azure cloud for all of your Neos projects overall:
 
