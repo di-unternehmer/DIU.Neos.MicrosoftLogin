@@ -3,6 +3,15 @@
 This package allows login to Neos backend by a Microsoft account with access to an Azure application.
 Classical Neos backend login extended with Microsoft login, so you can decide how you want to login at your /neos/ backend.
 
+## Installation
+composer require diu/neos-microsoft-login
+
+## Authors
+Christian Schwahn
+Alexander Kappler
+
+The development and the public-releases of this package is sponsored by our employer https://www.di-unternehmer.com
+
 
 ![Slider screenshot](Resources/Public/Images/screenshot.jpg)
 
