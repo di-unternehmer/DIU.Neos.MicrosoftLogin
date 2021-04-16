@@ -9,6 +9,7 @@ Christian Schwahn, Alexander Kappler
 The development and the public-releases of this package is sponsored by our employer https://www.di-unternehmer.com
 
 
+## Screenshot
 ![Slider screenshot](Resources/Public/Images/screenshot.jpg)
 
 
