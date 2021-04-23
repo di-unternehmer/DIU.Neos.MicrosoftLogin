@@ -10,5 +10,6 @@ DIU:
           - 'Neos.Neos:Editor'
         admin:
           - 'Neos.Neos:Administrator'
+      admins: []
   #    admins:
   #      - 'ad-azure-user@my-domain.com'
