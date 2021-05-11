@@ -35,9 +35,6 @@ prototype(Neos.Neos:View.Login) < prototype(Neos.Fusion:Component) {
                         background-image: url(' + props.backgroundImageSource + ');
                     }
                 '}</style>
-                <img class="neos-login-box-logo-resource" @children="attributes.src" width="200px" height="200px" alt="Neos Logo">
-                <Neos.Fusion:ResourceUri path="resource://Neos.Neos/Public/Images/Login/Logo.svg" />
-                </img>
                 <link rel="stylesheet"
                       @children="attributes.href">
                         <Neos.Fusion:ResourceUri path="resource://DIU.Neos.MicrosoftLogin/Public/Styles/Styles.css" />
