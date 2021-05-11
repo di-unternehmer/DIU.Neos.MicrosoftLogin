@@ -138,6 +138,7 @@ class LoginController extends ActionController
 
         $wallpaperHead = '.neos-login-box:before {' . $wallpaperBody . '}';
         $this->view->assign('wallpaperHead', $wallpaperHead);
+        $this->view->assign('year', date('Y'));
     }
 
 

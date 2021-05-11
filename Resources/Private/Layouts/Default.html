@@ -4,19 +4,15 @@
         <title>Login</title>
         <link
             rel="stylesheet"
-            href="/_Resources/Static/Packages/Neos.Neos/Styles/Login.css"
+            href="{f:uri.resource(package: 'Neos.Neos', path: 'Styles/Login.css')}"
         />
         <link
             rel="stylesheet"
-            href="/_Resources/Static/Packages/DIU.Neos.MicrosoftLogin/Styles/Styles.css"
+            href="{f:uri.resource(package: 'DIU.Neos.MicrosoftLogin', path: 'Styles/Styles.css')}"
         />
-
         <style type="text/css">
             {wallpaperHead}
         </style>
-
-        <script src="/_Resources/Static/Packages/Neos.Neos/Library/jquery/jquery-2.0.3.js"></script>
-        <script src="/_Resources/Static/Packages/Neos.Neos/Library/jquery-ui/js/jquery-ui-1.10.4.custom.js"></script>
     </head>
     <body class="neos" style="{wallpaperBody}">
         <div class="neos-modal-centered">
@@ -25,7 +21,7 @@
                     <figure class="neos-login-box-logo">
                         <img
                             class="neos-login-box-logo-resource"
-                            src="/_Resources/Static/Packages/Neos.Neos/Images/Login/Logo.svg"
+                            src="{f:uri.resource(package: 'Neos.Neos', path: 'Images/Login/Logo.svg')}"
                             width="200px"
                             height="200px"
                         />
@@ -36,7 +32,7 @@
             <footer class="neos-login-footer">
                 <p>
                     <a href="http://neos.io" target="_blank">Neos</a> – ©
-                    2006-2018 This is free software, licensed under GPL3 or
+                    2006-{year} This is free software, licensed under GPL3 or
                     higher, and you are welcome to redistribute it under certain
                     conditions; Neos comes with ABSOLUTELY NO WARRANTY; See
                     <a href="http://neos.io" target="_blank">neos.io</a> for
