@@ -4,7 +4,7 @@
     "name": "diu/neos-microsoft-login",
     "license": "MIT",
     "require": {
-        "neos/neos": "^5.0 || ^7.0",
+        "neos/neos": "^5.3 || ^7.0",
         "thenetworg/oauth2-azure": "^2.0"
     },
     "autoload": {
