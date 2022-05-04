@@ -120,7 +120,7 @@ class LoginController extends ActionController
                 $this->attachWallpaperFromSettings();
 
             } catch (\Exception $e) {
-                $this->logger->log('Authentication failed: ' . $e->getMessage(), LOG_ALERT);
+                $this->logger->alert('Authentication failed: ' . $e->getMessage());
                 exit('Authentication failed: ' . $e->getMessage());
             }
         }
