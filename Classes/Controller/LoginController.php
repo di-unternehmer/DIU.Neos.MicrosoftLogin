@@ -22,6 +22,7 @@ use Neos\Neos\Utility\User as UserUtility;
 use Neos\Flow\Security\AccountRepository;
 use Neos\Flow\Utility\Algorithms;
 use Psr\Log\LoggerInterface;
+use Psr\Log\LogLevel;
 use TheNetworg\OAuth2\Client\Provider\Azure;
 
 /**
@@ -120,7 +121,7 @@ class LoginController extends ActionController
                 $this->attachWallpaperFromSettings();
 
             } catch (\Exception $e) {
-                $this->logger->log('Authentication failed: ' . $e->getMessage(), LOG_ALERT);
+                $this->logger->log(LogLevel::ERROR, 'Authentication failed: ' . $e->getMessage(), []);
                 exit('Authentication failed: ' . $e->getMessage());
             }
         }
