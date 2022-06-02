@@ -14,6 +14,7 @@ namespace DIU\Neos\MicrosoftLogin\Controller;
 use \Neos\Flow\Mvc\Controller\ActionController;
 use Neos\Flow\Security\Account;
 use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Session\SessionInterface;
 use Neos\Neos\Domain\Model\User;
 use Neos\Neos\Domain\Service\UserService;
 use Neos\ContentRepository\Domain\Model\Workspace;
@@ -66,6 +67,13 @@ class LoginController extends ActionController
      */
     protected $logger;
 
+
+    /**
+     * @Flow\Inject
+     * @var SessionInterface
+     */
+    protected $session;
+
     /**
      * @return void
      */
@@ -74,6 +82,9 @@ class LoginController extends ActionController
         $arguments = $this->request->getArguments();
         if (session_status() == PHP_SESSION_NONE) {
             session_start();
+        }
+        if (!$this->session->isStarted()) {
+            $this->session->start();
         }
         $this->microsoftloginAuth = new Azure($this->settingsConfiguration['credentials']);
 
