@@ -88,8 +88,6 @@ class LoginController extends ActionController
         }
         $this->microsoftloginAuth = new Azure($this->settingsConfiguration['credentials']);
 
-        #\Neos\Flow\var_dump($this->microsoftloginAuth);
-
         if (!empty($arguments['error'])) {
             // Got an error, probably user denied access
             echo(htmlspecialchars($arguments['error_description'], ENT_QUOTES, 'UTF-8') . '<br>');
